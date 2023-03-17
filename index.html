@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mubii: Movie Streaming Platform</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- Font Source Sans Pro & Tilt Warp -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&family=Tilt+Warp&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container-fluid" id="home">
+        <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary navbar-dark">
+            <div class="container-fluid">
+                <span class="navbar-brand navbar-title">Mubii.</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-current-page nav-link" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="new-arrival.html">New Arrival</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="movie.html">Movie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="animation.html">Animation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="jp-anime.html">Japanese Anime</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex search-wrap" role="search">
+                        <input class="search-box form-control me-2" type="search" placeholder="Search.." aria-label="Search">
+                        <button class="btn btn-link btn-search" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-signin nav-link" href="#" data-bs-toggle="modal" data-bs-target="#Signin">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Alert -->
+        <div class="alert alert-success alert-dismissible alert-wrap position-fixed" role="alert">
+            <div class="alert-content">
+                Check out the New Arrival Movie <a href="new-arrival.html">here!</a>
+            </div>
+            <button type="button" class="btn-close btn-style" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <!-- Carousel -->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="https://www.themoviedb.org/t/p/original/fDiaDJfoZhpdfUV6GtpyWLHgS0.jpg
+                    " class="d-block w-100" alt="Missing Movie">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="https://www.themoviedb.org/t/p/original/sgpw2lB00tUuyw9kJCZt5NwbX0M.jpg
+                    " class="d-block w-100" alt="Sharper Movie">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="https://www.themoviedb.org/t/p/original/tlZBdyjh12tBJH4EW047hEigShA.jpg
+                    " class="d-block w-100" alt="Antman and The Wasp: Quantumania">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="https://www.themoviedb.org/t/p/original/cJxWyYfYXmHGFYDQXKkyHcxsbvh.jpg
+                    " class="d-block w-100" alt="Knock at The Cabin">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- New Arrival Content -->
+        <div class="container-fluid top_content_wrapper">
+            <h2><a class="content_title" href="new-arrival.html">New Arrival</a></h2>
+
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/jYXJW19PMEUrpyavEHrnnlItQn1.jpg" class="card-img-top rounded-3" alt="Missing">
+                            <div class="card-body">
+                                <h5 class="card-title">Missing</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2023 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/tq8x5F17q95T1j0up5rpzXFAylN.jpg" class="card-img-top rounded-3" alt="Sharper">
+                            <div class="card-body">
+                                <h5 class="card-title">Sharper</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2023 | 15+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/jh9hBDP9y7Ll3bG0Yhl66HSgN6e.jpg" class="card-img-top rounded-3" alt="Ant-Man and The Wasp: Quantumania">
+                            <div class="card-body">
+                                <h5 class="card-title">Ant-Man and The Wasp: Quantumania</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2023 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/dm06L9pxDOL9jNSK4Cb6y139rrG.jpg" class="card-img-top rounded-3" alt="Knock at The Cabin">
+                            <div class="card-body">
+                                <h5 class="card-title">Knock at The Cabin</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2023 | R</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/uMMIeMVk1TCG3CZilpxbzFh0JKT.jpg" class="card-img-top rounded-3" alt="65">
+                            <div class="card-body">
+                                <h5 class="card-title">65</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2023 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/3QpO7dxLXBdPgWpNLKvRNojz7bv.jpg" class="card-img-top rounded-3" alt="Alice, Darling">
+                            <div class="card-body">
+                                <h5 class="card-title">Alice, Darling</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2023 | 17+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="more_button">
+                <a href="new-arrival.html">more..</a>
+            </div>
+        </div>
+
+        <!-- Movie Content -->
+        <div class="container-fluid content_wrapper">
+            <h2><a class="content_title" href="movie.html">Movie</a></h2>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/ug47WJ60alvRQWJFOkjmYsmmrhh.jpg" class="card-img-top rounded-3" alt="Spider-Man: No Way Home">
+                                <div class="card-body">
+                                <h5 class="card-title">Spider-Man: No Way Home</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2022 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/m2f19zkF4H2KxVe0Xj1yzkDjUA1.jpg" class="card-img-top rounded-3" alt="Doctor Strange in the Multiverse of Madness">
+                            <div class="card-body">
+                                <h5 class="card-title">Doctor Strange in the Multiverse of Madness</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2022 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/7ZINBixo7zO21iF9doe1cSTHrV4.jpg" class="card-img-top rounded-3" alt="Black Panther: Wakanda Forever">
+                            <div class="card-body">
+                                <h5 class="card-title">Black Panther: Wakanda Forever</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2022 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/g4oIImLcP0D2oHUNMfyKN5UxSpJ.jpg" class="card-img-top rounded-3" alt="Escape Room: Tournament of Champions">
+                            <div class="card-body">
+                                <h5 class="card-title">Escape Room: Tournament of Champions</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2021 | 13+</h6>
+                            </div>
+                        </a> 
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/lbgAB6OMYbW33BnlM50AWn3H9la.jpg" class="card-img-top rounded-3" alt="Shang-Chi and The Legend of The Ten Rings">
+                            <div class="card-body">
+                                <h5 class="card-title">Shang-Chi and The Legend of The Ten Rings</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2021 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/jG209nGkkhs1XPB9qyKH0aTU1m8.jpg" class="card-img-top rounded-3" alt="Mulan">
+                            <div class="card-body">
+                                <h5 class="card-title">Mulan</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2020 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="more_button">
+                <a href="movie.html">more..</a>
+            </div>
+        </div>
+
+        <!-- Animation Content -->
+        <div class="container-fluid content_wrapper">
+            <h2><a class="content_title" href="animation.html">Animation</a></h2>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/zzXFM4FKDG7l1ufrAkwQYv2xvnh.jpg" class="card-img-top rounded-3" alt="The Ice Age Adventures of Buck Wild">
+                                <div class="card-body">
+                                <h5 class="card-title">The Ice Age Adventures of Buck Wild</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2022 | PG</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/6fcFmdVLCCbf1gFt8HlC6BRj8pt.jpg" class="card-img-top rounded-3" alt="The Bad Guys">
+                            <div class="card-body">
+                                <h5 class="card-title">The Bad Guys</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2022 | PG</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/iW6ixzkrvdrcxk0umiLZMtlSl9L.jpg" class="card-img-top rounded-3" alt="Diary of a Wimpy Kid: Rodrick Rules">
+                            <div class="card-body">
+                                <h5 class="card-title">Diary of a Wimpy Kid: Rodrick Rules</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2022 | PG</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/qjd2Izl3h8iEMejf9S3KbCP1DsY.jpg" class="card-img-top rounded-3" alt="Diary of a Wimpy Kid">
+                            <div class="card-body">
+                                <h5 class="card-title">Diary of a Wimpy Kid</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2021 | PG</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/6t7X3LMwVtCubcmk9HWI1M9RtbK.jpg" class="card-img-top rounded-3" alt="Raya and The Last Dragon">
+                            <div class="card-body">
+                                <h5 class="card-title">Raya and The Last Dragon</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2021 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/7M8bMABEbhGkC6z36WEsDttDk6F.jpg" class="card-img-top rounded-3" alt="Encanto">
+                            <div class="card-body">
+                                <h5 class="card-title">Encanto</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2021 | PG</h6>
+                            </div>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+            <div class="more_button">
+                <a href="animation.html">more..</a>
+            </div>
+        </div>
+
+        <!-- JP Anime Content -->
+        <div class="container-fluid content_wrapper">
+            <h2><a class="content_title" href="jp-anime.html">Japanese Anime</a></h2>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/kk28Lk8oQBGjoHRGUCN2vxKb4O2.jpg" class="card-img-top rounded-3" alt="Bubble">
+                            <div class="card-body">
+                                <h5 class="card-title">Bubble</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2022 | 18+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/z6s2EL617Jnn9VAXD3WRdOJd3A3.jpg" class="card-img-top rounded-3" alt="Jujutsu Kaisen 0">
+                            <div class="card-body">
+                                <h5 class="card-title">Jujutsu Kaisen 0</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2021 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/9oK820JieICOcfUhI6mkpFrcA9m.jpg" class="card-img-top rounded-3" alt="Earwig and The Witch">
+                            <div class="card-body">
+                                <h5 class="card-title">Earwig and The Witch</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2021 | PG</h6>
+                            </div>
+                        </a> 
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/ucwgbb7PyO6Zlq6R5LR64sovFLE.jpg" class="card-img-top rounded-3" alt="Demon Slayer the Movie: Mugen Train">
+                            <div class="card-body">
+                                <h5 class="card-title">Demon Slayer the Movie: Mugen Train</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2020 | 17+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/qgrk7r1fV4IjuoeiGS5HOhXNdLJ.jpg" class="card-img-top rounded-3" alt="Weathering with You">
+                            <div class="card-body">
+                                <h5 class="card-title">Weathering with You</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2019 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal">
+                            <img src="https://www.themoviedb.org/t/p/original/qIqySVQWNBhruTpUa6HCjdyLDRl.jpg" class="card-img-top rounded-3" alt="Hello World">
+                                <div class="card-body">
+                                <h5 class="card-title">Hello World</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2019 | G</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="more_button">
+                <a href="jp-anime.html">more..</a>
+            </div>
+        </div>
+
+        <!-- Coming Soon Content -->
+        <div class="container-fluid btm_content_wrapper">
+            <h2 class="coming-soon-title">Coming Soon</h2>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="#" class="movie_modal" data-bs-toggle="modal" data-bs-target="#CS-Shazam">
+                            <img src="https://www.themoviedb.org/t/p/original/zpCCTtuQMHiHycpsrWnW2eCrBql.jpg" class="card-img-top rounded-3" alt="Shazam! Fury of the Gods">
+                            <div class="card-body">
+                                <h5 class="card-title">Shazam! Fury of the Gods</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2023 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#CS-Cocaine">
+                            <img src="https://www.themoviedb.org/t/p/original/gOnmaxHo0412UVr1QM5Nekv1xPi.jpg" class="card-img-top rounded-3" alt="Cocaine Bear">
+                                <div class="card-body">
+                                <h5 class="card-title">Cocaine Bear</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2023 | R</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#CS-Peterpan">
+                            <img src="https://www.themoviedb.org/t/p/original/bW9FFbWkzaBNqBH8qVxDYbxeAKh.jpg" class="card-img-top rounded-3" alt="Peter Pan & Wendy">
+                            <div class="card-body">
+                                <h5 class="card-title">Peter Pan & Wendy</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2023 | PG</h6>
+                            </div>
+                        </a> 
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#CS-Mario">
+                            <img src="https://www.themoviedb.org/t/p/original/9xv2PnPV1UWdIRbpa2olHuN4FCX.jpg" class="card-img-top rounded-3" alt="The Super Mario Bros. Movie">
+                            <div class="card-body">
+                                <h5 class="card-title">The Super Mario Bros. Movie</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2023 | PG</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#CS-Guardian">
+                            <img src="https://www.themoviedb.org/t/p/original/kZYBh0vFps17MU4mPWOjnSrgBWJ.jpg" class="card-img-top rounded-3" alt="Guardians of the Galaxy Vol.3">
+                            <div class="card-body">
+                                <h5 class="card-title">Guardians of the Galaxy Vol.3</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2023 | 12+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#CS-Mermaid">
+                            <img src="https://www.themoviedb.org/t/p/original/fXJSYPjkZcH4cOKhl7K1ww6ghQB.jpg" class="card-img-top rounded-3" alt="The Little Mermaid">
+                            <div class="card-body">
+                                <h5 class="card-title">The Little Mermaid</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2023 | PG</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="container-fluid footer_area">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <h3 class="feedback_title">Contact Us</h3>
+                    <div class="mb-2">
+                        <input type="text" class="form-control form_height form_width" id="exampleFormControlInput1" placeholder="Name">
+                    </div>
+                    <div class="mb-2">
+                        <input type="email" class="form-control form_height form_width" id="exampleFormControlInput1" placeholder="E-mail address">
+                    </div>
+                    <div class="mb-2">
+                        <input type="text" class="form-control form_height form_width" id="exampleFormControlInput1" placeholder="Subject">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control form_width" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-danger btn_send">Send</button>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3 col-sm-12">
+                    <h3 class="footer_title mt_30">Further Information</h3>
+                    <ul type="none" class="further_info">
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Subscription</li>
+                        <li>Careers</li>
+                        <li>FAQ</li>
+                        <li>Help</li>
+                    </ul>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3 col-sm-12">
+                    <h3 class="footer_title mt_10">Follow Us</h3>
+                    <div class="d-flex">
+                        <div class="socmed_icon d-flex justify-content-center align-items-center ms-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" fill="white" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+                        </div>
+                        <div class="socmed_icon d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                            </svg>
+                        </div>
+                        <div class="socmed_icon d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" fill="white" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <p class="copyright">Copyright &copy 2023, Monica Aurellia</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signin Modal -->
+    <div class="modal fade" id="Signin" tabindex="-1" aria-labelledby="Signin" aria-hidden="true">
+        <div class="modal-dialog" style="margin-top: 110px;">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal_style pt-2">
+                    <h2 class="signin-title">Welcome!</h2>
+                    <div class="mb-2">
+                        <label for="inputemail" class="form-label label_style">E-mail</label>
+                        <input type="email" class="form-control form_height" id="inputemail" placeholder="E-mail address">
+                    </div>
+                    <div class="mb-2">
+                        <label for="inputpassword" class="form-label label_style">Password</label>
+                        <input type="password" class="form-control form_height" id="inputpassword" placeholder="Password">
+                    </div>
+                    <div>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="text-or checkbox_text">Keep me signed in</label>
+                    </div>
+                    <div class="btn_signin_wrap d-flex flex-column mt-3">
+                        <button type="button" class="btn btn-danger btn_signin">Sign In</button>
+                        <a href="#" class="create_acc">Create Account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Coming Soon Movie -->
+    <!-- Shazam Modal -->
+    <div class="modal fade" id="CS-Shazam" tabindex="-1" aria-labelledby="CS-Shazam" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/eA0GmeSxvBIG7KdtVv0p7AtnDpf.jpg" alt="Shazam! Fury of the Gods Poster">
+                        <div class="poster-title">
+                            <h1>Shazam! Fury of the Gods</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">March 2023 | 13+ | 2h 10m</p>
+                            <p class="overview">The film continues the story of teenage Billy Batson who, upon reciting the magic word "SHAZAM!" is transformed into his adult Super Hero alter ego, Shazam.</p>
+                            <p class="movie_info mb-0">Genre: Fantasy,Action, Comedy</p>
+                            <p class="movie_info mb-0">Cast: Zachary Levi, Asher Angel, Jack Dylan Grazer, Adam Brody</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/AIc671o9yCI" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cocaine Bear Modal -->
+    <div class="modal fade" id="CS-Cocaine" tabindex="-1" aria-labelledby="CS-Cocaine" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/a2tys4sD7xzVaogPntGsT1ypVoT.jpg" alt="Cocaine Bear Poster">
+                        <div class="poster-title">
+                            <h1>Cocaine Bear</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">March 2023 | R | 1h 35m</p>
+                            <p class="overview">An oddball group of cops, criminals, tourists and teens converge in a Georgia forest where a 500-pound black bear goes on a murderous rampage after unintentionally ingesting cocaine.</p>
+                            <p class="movie_info mb-0">Genre: Action, Comedy, Thriller</p>
+                            <p class="movie_info mb-0">Cast: Keri Russell, O'Shea Jackson Jr., Alden Ehrenreich, Ray Liotta</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/DuWEEKeJLMI" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Peter Pan Modal -->
+    <div class="modal fade" id="CS-Peterpan" tabindex="-1" aria-labelledby="CS-Peterpan" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/pZ1R7976fQSHgbZN4wwxt4oXO30.jpg" alt="Peter Pan & Wendy Poster">
+                        <div class="poster-title">
+                            <h1>Peter Pan & Wendy</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">Apr 2023 | PG | 1h 46m</p>
+                            <p class="overview">Alongside her brothers and a tiny fairy named Tinker Bell, Wendy Darling travels with Peter Pan to the magical world of Neverland. There, she encounters an evil pirate captain, Captain Hook, and embarks on a thrilling and dangerous adventure that will change her life forever.</p>
+                            <p class="movie_info mb-0">Genre: Adventure, Family, Fantasy</p>
+                            <p class="movie_info mb-0">Cast: Alexander Molony, Ever Anderson, Jude Law, Yara Shahidi</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/9Ji5U2sTlLU" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mario Modal -->
+    <div class="modal fade" id="CS-Mario" tabindex="-1" aria-labelledby="CS-Mario" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/tts9ZQimnTsWdR4bV6CNzY2AUkk.jpg" alt="The Super Mario Bros. Movie Poster">
+                        <div class="poster-title">
+                            <h1>The Super Mario Bros. Movie</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">Apr 2023 | PG | 1h 32m</p>
+                            <p class="overview">The story of The Super Mario Bros. on their journey through the Mushroom Kingdom.</p>
+                            <p class="movie_info mb-0">Genre: Adventure, Family, Fantasy</p>
+                            <p class="movie_info mb-0">Cast: Chris Pratt, Anya Taylor-Joy, Charlie Day, Jack Black</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/DdD9geN6erk" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Guardian Galaxy Modal -->
+    <div class="modal fade" id="CS-Guardian" tabindex="-1" aria-labelledby="CS-Guardian" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/A9s8TtIlNkH317GAtO5mgLKytey.jpg" alt="Guardians of the Galaxy Vol.3 Poster">
+                        <div class="poster-title">
+                            <h1>Guardians of the Galaxy Vol.3</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">May 2023 | 12+</p>
+                            <p class="overview">Still reeling from the loss of Gamora, Peter Quill rallies his team to defend the universe and one of their own - a mission that could mean the end of the Guardians if not successful.</p>
+                            <p class="movie_info mb-0">Genre: Sci-Fi, Action, Comedy</p>
+                            <p class="movie_info mb-0">Cast: Chris Pratt, Zoe Saldana, Dave Bautista, Karen Gillan</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/u3V5KDHRQvk" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Little Mermaid Modal -->
+    <div class="modal fade" id="CS-Mermaid" tabindex="-1" aria-labelledby="CS-Mermaid" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/bMqVK5MouA2umK9Mpwmr0TlZiek.jpg" alt="The Little Mermaid Poster">
+                        <div class="poster-title">
+                            <h1>The Little Mermaid</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">May 2023 | PG</p>
+                            <p class="overview">A young mermaid makes a deal with a sea witch, to trade her beautiful voice for human legs so she can discover the world above water and impress a prince.</p>
+                            <p class="movie_info mb-0">Genre: Adventure, Family, Fantasy</p>
+                            <p class="movie_info mb-0">Cast: Halle Bailey, Jonah Hauer-King, Melissa McCarthy, Javier Bardem</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/0-wPm99PF9U" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

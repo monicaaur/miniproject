@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mubii: Animation</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- Font Source Sans Pro & Tilt Warp -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&family=Tilt+Warp&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container-fluid" id="animation">
+        <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <span class="navbar-brand navbar-title">Mubii.</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link"  href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="new-arrival.html">New Arrival</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="movie.html">Movie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-current-page nav-link" aria-current="page" href="#animation">Animation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="jp-anime.html">Japanese Anime</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex search-wrap" role="search">
+                        <input class="search-box form-control me-2" type="search" placeholder="Search.." aria-label="Search">
+                        <button class="btn btn-link btn-search" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-signin nav-link" href="#" data-bs-toggle="modal" data-bs-target="#Signin">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Breadcrumb -->
+        <nav class="bc_wrap" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html" style="color: #e6283e; text-decoration: none;">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page" style="color: white">Animation</li>
+            </ol>
+        </nav>
+
+        <!-- Content -->
+        <div class="container-fluid pg2_content_wrapper">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#A-Ice">
+                            <img src="https://www.themoviedb.org/t/p/original/7S6guTrEdbCTFUz4fEMrDyxSrsM.jpg" class="card-img-top rounded-3" alt="The Ice Age Adventures of Buck Wild">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">The Ice Age Adventures of Buck Wild</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2022 | PG</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#A-Bad">
+                            <img src="https://www.themoviedb.org/t/p/original/95zHwiYHyVNuKwaJyz3KIvJGXUr.jpg" class="card-img-top rounded-3" alt="The Bad Guys">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">The Bad Guys</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2022 | PG</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#A-Wimpy2">
+                            <img src="https://www.themoviedb.org/t/p/original/eZJwFeoopPvmhZYAqchs7CGEqpr.jpg" class="card-img-top rounded-3" alt="Diary of a Wimpy Kid: Rodrick Rules">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">Diary of a Wimpy Kid: Rodrick Rules</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2022 | PG</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#A-Wimpy">
+                            <img src="https://www.themoviedb.org/t/p/original/qrJkJFY3lvHKmE42Kh8bStoCEHb.jpg" class="card-img-top rounded-3" alt="Diary of a Wimpy Kid">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">Diary of a Wimpy Kid</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2021 | PG</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#A-Raya">
+                            <img src="https://www.themoviedb.org/t/p/original/3emtmbHAp145frh3Pps1bZCCEHY.jpg" class="card-img-top rounded-3" alt="Raya and The Last Dragon">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">Raya and The Last Dragon</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2021 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#A-Encanto">
+                            <img src="https://www.themoviedb.org/t/p/original/4rQPEA0k6EursVxmOEaZsKGlFfB.jpg" class="card-img-top rounded-3" alt="Encanto">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">Encanto</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2021 | PG</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#A-Luca">
+                            <img src="https://www.themoviedb.org/t/p/original/xDhEhP72uwQTTpqD6fAlGnBXpuq.jpg" class="card-img-top rounded-3" alt="Luca">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">Luca</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2021 | PG</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#A-Spongebob">
+                            <img src="https://www.themoviedb.org/t/p/original/cDjKDI9kE3lrO6okJQYLhRtsohV.jpg" class="card-img-top rounded-3" alt="The SpongeBob Movie: Sponge on the Run">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">The SpongeBob Movie: Sponge on the Run</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2020 | PG</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#A-Coco">
+                            <img src="https://www.themoviedb.org/t/p/original/pHH20NEwIPzdWstsVosPtOQvJXx.jpg" class="card-img-top rounded-3" alt="Coco">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">Coco</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2017 | PG</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#A-Zootopia">
+                            <img src="https://www.themoviedb.org/t/p/original/fGgsIJXTCofFOQydtvWmo9ZIzJX.jpg" class="card-img-top rounded-3" alt="Zootopia">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">Zootopia</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2016 | PG</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#A-Moana">
+                            <img src="https://www.themoviedb.org/t/p/original/g6EFJmGHbyQjgGK58FZ6FdvvSEy.jpg" class="card-img-top rounded-3" alt="Moana">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">Moana</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2016 | PG</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#A-Dinosaur">
+                            <img src="https://www.themoviedb.org/t/p/original/rYbEfWT61P5Ft6FjTyy0Q2i9aze.jpg" class="card-img-top rounded-3" alt="The Good Dinosaur">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">The Good Dinosaur</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2015 | PG</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="container-fluid footer_area">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <h3 class="feedback_title">Contact Us</h3>
+                    <div class="mb-2">
+                        <input type="text" class="form-control form_height form_width" id="exampleFormControlInput1" placeholder="Name">
+                    </div>
+                    <div class="mb-2">
+                        <input type="email" class="form-control form_height form_width" id="exampleFormControlInput1" placeholder="E-mail address">
+                    </div>
+                    <div class="mb-2">
+                        <input type="text" class="form-control form_height form_width" id="exampleFormControlInput1" placeholder="Subject">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control form_width" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-danger btn_send">Send</button>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3 col-sm-12">
+                    <h3 class="footer_title mt_30">Further Information</h3>
+                    <ul type="none" class="further_info">
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Subscription</li>
+                        <li>Careers</li>
+                        <li>FAQ</li>
+                        <li>Help</li>
+                    </ul>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3 col-sm-12">
+                    <h3 class="footer_title mt_10">Follow Us</h3>
+                    <div class="d-flex">
+                        <div class="socmed_icon d-flex justify-content-center align-items-center ms-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" fill="white" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+                        </div>
+                        <div class="socmed_icon d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                            </svg>
+                        </div>
+                        <div class="socmed_icon d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" fill="white" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <p class="copyright">Copyright &copy 2023, Monica Aurellia</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signin Modal -->
+    <div class="modal fade" id="Signin" tabindex="-1" aria-labelledby="Signin" aria-hidden="true">
+        <div class="modal-dialog" style="margin-top: 110px;">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal_style pt-2">
+                    <h2 class="signin-title">Welcome!</h2>
+                    <div class="mb-2">
+                        <label for="inputemail" class="form-label label_style">E-mail</label>
+                        <input type="email" class="form-control form_height" id="inputemail" placeholder="E-mail address">
+                    </div>
+                    <div class="mb-2">
+                        <label for="inputpassword" class="form-label label_style">Password</label>
+                        <input type="password" class="form-control form_height" id="inputpassword" placeholder="Password">
+                    </div>
+                    <div>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="text-or checkbox_text">Keep me signed in</label>
+                    </div>
+                    <div class="btn_signin_wrap d-flex flex-column mt-3">
+                        <button type="button" class="btn btn-danger btn_signin">Sign In</button>
+                        <a href="#" class="create_acc">Create Account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ice Age Modal -->
+    <div class="modal fade" id="A-Ice" tabindex="-1" aria-labelledby="A-Ice" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/eK7g82hWisKdxC0HOh4Vavs5X2K.jpg" alt="The Ice Age Adventures of Buck Wild Poster">
+                        <div class="poster-title">
+                            <h1>The Ice Age Adventures of Buck Wild</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2022 | PG | 1h 22m</p>
+                            <p class="overview">The fearless one-eyed weasel Buck teams up with mischievous possum brothers Crash & Eddie as they head off on a new adventure into Buck's home: The Dinosaur World.</p>
+                            <p class="movie_info mb-0">Genre: Comedy, Family, Adventure</p>
+                            <p class="movie_info mb-0">Cast: Simon Pegg, Vincent Tong, Aaron Harris, Utkarsh Ambudkar</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/0U0L4uT0btQ" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Bad Guys Modal -->
+    <div class="modal fade" id="A-Bad" tabindex="-1" aria-labelledby="A-Bad" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/bTdjh8P21KmxNygQ37COAxA36Fr.jpg" alt="The Bad Guys Poster">
+                        <div class="poster-title">
+                            <h1>The Bad Guys</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2022 | PG | 1h 40m</p>
+                            <p class="overview">When the Bad Guys, a crew of criminal animals, are finally caught after years of heists and being the world's most-wanted villains, Mr. Wolf brokers a deal to save them all from prison.</p>
+                            <p class="movie_info mb-0">Genre: Action, Adventure, Crime</p>
+                            <p class="movie_info mb-0">Cast: Sam Rockwell, Marc Maron, Awkwafina, Craig Robinson</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/m8Xt0yXaDPU" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wimpy Kids 2 Modal -->
+    <div class="modal fade" id="A-Wimpy2" tabindex="-1" aria-labelledby="A-Wimpy2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/xEUz44bmr8EOPFQrVZ5ebxgN8Eq.jpg" alt="Diary of a Wimpy Kid: Rodrick Rules Poster">
+                        <div class="poster-title">
+                            <h1>Diary of a Wimpy Kid: Rodrick Rules</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2022 | PG | 1h 14m</p>
+                            <p class="overview">A new school year, his brother Rodrick teases him over and over and over and over again. Will Greg manage to get along with him? Or will a secret ruin everything?</p>
+                            <p class="movie_info mb-0">Genre: Animation, Comedy, Family</p>
+                            <p class="movie_info mb-0">Cast: Brady Noon, Hunter Dillon, Ethan William Childress, Erica Cerra</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/16u7oeK0O90" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wimpy Kids Modal -->
+    <div class="modal fade" id="A-Wimpy" tabindex="-1" aria-labelledby="A-Wimpy" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/x78cvxbmpBNcHON7x3Iv8vih5Sj.jpg" alt="Diary of a Wimpy Kid Poster">
+                        <div class="poster-title">
+                            <h1>Diary of a Wimpy Kid</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2021 | PG | 58m</p>
+                            <p class="overview">Greg Heffley is a scrawny but ambitious kid with an active imagination and big plans to be rich and famous - he just has to survive middle school first.</p>
+                            <p class="movie_info mb-0">Genre: Animation, Comedy, Family</p>
+                            <p class="movie_info mb-0">Cast: Brady Noon, Hunter Dillon, Ethan William Childress, Erica Cerra</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/VKhCPUa-glo" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Raya Modal -->
+    <div class="modal fade" id="A-Raya" tabindex="-1" aria-labelledby="A-Raya" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/rLJaTJSuRHhRiLIKMMedfHM8KQR.jpg" alt="Raya and The Last Dragon Poster">
+                        <div class="poster-title">
+                            <h1>Raya and The Last Dragon</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2021 | 13+ | 1h 47m</p>
+                            <p class="overview">In a realm known as Kumandra, a re-imagined Earth inhabited by an ancient civilization, a warrior named Raya is determined to find the last dragon.</p>
+                            <p class="movie_info mb-0">Genre: Fantasy, Action, Adventure</p>
+                            <p class="movie_info mb-0">Cast: Kelly Marie Tran, Awkwafina, Izaac Wang, Gemma Chan</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/3UFWsEY8Hdc" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Encanto Modal -->
+    <div class="modal fade" id="A-Encanto" tabindex="-1" aria-labelledby="A-Encanto" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/cFsiHk6W0bnY32fE4sMMtnVbwTG.jpg" alt="Encanto Poster">
+                        <div class="poster-title">
+                            <h1>Encanto</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2021 | PG | 1h 42m</p>
+                            <p class="overview">A Colombian teenage girl has to face the frustration of being the only member of her family without magical powers.</p>
+                            <p class="movie_info mb-0">Genre: Comedy, Family, Fantasy</p>
+                            <p class="movie_info mb-0">Cast: Stephanie Beatriz, Mar?a Cecilia Botero, John Leguizamo, Mauro Castillo</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/bjMFebB2Coo" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Luca Modal -->
+    <div class="modal fade" id="A-Luca" tabindex="-1" aria-labelledby="A-Luca" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/aI5S2WMoTFVgBznYi2DP3WRojCl.jpg" alt="Luca Poster">
+                        <div class="poster-title">
+                            <h1>Luca</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2021 | PG | 1h 35m</p>
+                            <p class="overview">Luca and his best friend Alberto experience an unforgettable summer on the Italian Riviera. But all the fun is threatened by a deeply-held secret: they are sea monsters from another world just below the water's surface.</p>
+                            <p class="movie_info mb-0">Genre: Comedy, Family, Adventure</p>
+                            <p class="movie_info mb-0">Cast: Jacob Tremblay, Jack Dylan Grazer, Emma Berman, Saverio Raimondo</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/mYfJxlgR2jw" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spongebob Modal -->
+    <div class="modal fade" id="A-Spongebob" tabindex="-1" aria-labelledby="A-Spongebob" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/wu1uilmhM4TdluKi2ytfz8gidHf.jpg" alt="The SpongeBob Movie: Sponge on the Run Poster">
+                        <div class="poster-title">
+                            <h1>The SpongeBob Movie: Sponge on the Run</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2020 | PG | 1h 35m</p>
+                            <p class="overview">When his best friend Gary is suddenly snatched away, SpongeBob takes Patrick on a madcap mission far beyond Bikini Bottom to save their pink-shelled pal.</p>
+                            <p class="movie_info mb-0">Genre: Fantasy, Adventure, Comedy</p>
+                            <p class="movie_info mb-0">Cast: Tom Kenny, Bill Fagerbakke, Rodger Bumpass, Mr. Lawrence</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/a2cowVH03Xo" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Coco Modal -->
+    <div class="modal fade" id="A-Coco" tabindex="-1" aria-labelledby="A-Coco" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/bnkf3C2ZMF6i7MLOemWqEHDMqfh.jpg" alt="Coco Poster">
+                        <div class="poster-title">
+                            <h1>Coco</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2017 | PG | 1h 45m</p>
+                            <p class="overview">Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer.</p>
+                            <p class="movie_info mb-0">Genre: Family, Fantasy, Music</p>
+                            <p class="movie_info mb-0">Cast: Anthony Gonzalez, Gael Garc?a Bernal, Benjamin Bratt, Alanna Ubach</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/xlnPHQ3TLX8" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Zootopia Modal -->
+    <div class="modal fade" id="A-Zootopia" tabindex="-1" aria-labelledby="A-Zootopia" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/x85KUWnKkX4MakPxAvjD93JMs6Y.jpg" alt="Zootopia Poster">
+                        <div class="poster-title">
+                            <h1>Zootopia</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2016 | PG | 1h 49m</p>
+                            <p class="overview">In a city of anthropomorphic animals, a rookie bunny cop and a cynical con artist fox must work together to uncover a conspiracy.</p>
+                            <p class="movie_info mb-0">Genre: Adventure, Family, Comedy</p>
+                            <p class="movie_info mb-0">Cast: Jason Bateman, Ginnifer Goodwin, Idris Elba, Jenny Slate</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/bY73vFGhSVk" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Moana Modal -->
+    <div class="modal fade" id="A-Moana" tabindex="-1" aria-labelledby="A-Moana" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/iYLKMV7PIBtFmtygRrhSiyzcVsF.jpg" alt="Moana Poster">
+                        <div class="poster-title">
+                            <h1>Moana</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2016 | PG | 1h 46m</p>
+                            <p class="overview">In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches Moana's island, she answers the Ocean's call to seek out the Demigod to set things right.</p>
+                            <p class="movie_info mb-0">Genre: Adventure, Family, Comedy</p>
+                            <p class="movie_info mb-0">Cast: Auli'i Cravalho, Dwayne Johnson, Rachel House, Temuera Morrison</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/LKFuXETZUsI" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Good Dinosaur Modal -->
+    <div class="modal fade" id="A-Dinosaur" tabindex="-1" aria-labelledby="A-Dinosaur" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/ur1soQ2xEI6Xg2TWrTS8t94JO9Y.jpg" alt="The Good Dinosaur Poster">
+                        <div class="poster-title">
+                            <h1>The Good Dinosaur</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2015 | PG | 1h 33m</p>
+                            <p class="overview">In a world where dinosaurs and humans live side-by-side, an Apatosaurus named Arlo makes an unlikely human friend.</p>
+                            <p class="movie_info mb-0">Genre: Adventure, Animation, Family</p>
+                            <p class="movie_info mb-0">Cast: Frances McDormand, Raymond Ochoa, Jeffrey Wright, Steve Zahn</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/O-RgquKVTPE" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

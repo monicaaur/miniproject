@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mubii: Movie</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- Font Source Sans Pro & Tilt Warp -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&family=Tilt+Warp&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container-fluid" id="movie">
+        <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <span class="navbar-brand navbar-title">Mubii.</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link"  href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="new-arrival.html">New Arrival</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-current-page nav-link" aria-current="page" href="#movie">Movie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="animation.html">Animation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="jp-anime.html">Japanese Anime</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex search-wrap" role="search">
+                        <input class="search-box form-control me-2" type="search" placeholder="Search.." aria-label="Search">
+                        <button class="btn btn-link btn-search" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-signin nav-link" href="#" data-bs-toggle="modal" data-bs-target="#Signin">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Breadcrumb -->
+        <nav class="bc_wrap" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html" style="color: #e6283e; text-decoration: none;">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page" style="color: white">Movie</li>
+            </ol>
+        </nav>
+
+        <!-- Content -->
+        <div class="container-fluid pg2_content_wrapper">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#M-Spiderman">
+                            <img src="https://www.themoviedb.org/t/p/original/gOxBijsuojm9RowwRZydp9X6l6m.jpg" class="card-img-top rounded-3" alt="Spider-Man: No Way Home">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">Spider-Man: No Way Home</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2022 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#M-Doctor">
+                            <img src="https://www.themoviedb.org/t/p/original/tPnROETvX2OXqBMiFhH9CY9oiEH.jpg" class="card-img-top rounded-3" alt="Doctor Strange in the Multiverse of Madness">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">Doctor Strange in the Multiverse of Madness</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2022 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#M-BlackP">
+                            <img src="https://www.themoviedb.org/t/p/original/nKEIUvd9udkExJy0oUhug84qcTO.jpg" class="card-img-top rounded-3" alt="Black Panther: Wakanda Forever">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">Black Panther: Wakanda Forever</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2022 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#M-Escape">
+                            <img src="https://www.themoviedb.org/t/p/original/fzhI41l1vbRnekouh6PsD6KXK3x.jpg" class="card-img-top rounded-3" alt="Escape Room: Tournament of Champions">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">Escape Room: Tournament of Champions</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2021 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#M-Sangchi">
+                            <img src="https://www.themoviedb.org/t/p/original/6S2fCbyS7YltAAX2E3c2CzWe5lh.jpg" class="card-img-top rounded-3" alt="Shang-Chi and The Legend of The Ten Rings">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">Shang-Chi and The Legend of The Ten Rings</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2021 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#M-Mulan">
+                            <img src="https://www.themoviedb.org/t/p/original/yw3ZvsL6uh78u9jqZeUOAa4R1jz.jpg" class="card-img-top rounded-3" alt="Mulan">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">Mulan</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2020 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#M-Sonic">
+                            <img src="https://www.themoviedb.org/t/p/original/xliSKb60RE2hWVpF221mXcdYdzO.jpg" class="card-img-top rounded-3" alt="Sonic the Hedgehog">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">Sonic the Hedgehog</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2020 | PG</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#M-Pokemon">
+                            <img src="https://www.themoviedb.org/t/p/original/99fKFSYYKadyJ8axbhuXDy4zpfO.jpg" class="card-img-top rounded-3" alt="Pokemon: Detective Pikachu">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">Pokemon: Detective Pikachu</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2019 | PG</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#M-Jumanji">
+                            <img src="https://www.themoviedb.org/t/p/original/de7rTqkf4kXbL2kFEIesSF9mDTA.jpg" class="card-img-top rounded-3" alt="Jumanji: The Next Level">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">Jumanji: The Next Level</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2019 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#M-Searching">
+                            <img src="https://www.themoviedb.org/t/p/original/ngKA0onHc3xpJGMEo9myVuUdUI1.jpg" class="card-img-top rounded-3" alt="Searching">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">Searching</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2018 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#M-Showman">
+                            <img src="https://www.themoviedb.org/t/p/original/jHhoix2bnaTd1464d5uLWQ8GmY8.jpg" class="card-img-top rounded-3" alt="The Greatest Showman">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">The Greatest Showman</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2017 | 13+</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card card_border">
+                        <a href="" class="movie_modal" data-bs-toggle="modal" data-bs-target="#M-Beauty">
+                            <img src="https://www.themoviedb.org/t/p/original/vP76h2CCcOIU5moDomMALrhoMm3.jpg" class="card-img-top rounded-3" alt="Beauty and The Beast">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 17px;">Beauty and The Beast</h5>
+                                <h6 class="card-subtitle mb-4 text-muted" style="font-size: 14px;">2017 | PG</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="container-fluid footer_area">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <h3 class="feedback_title">Contact Us</h3>
+                    <div class="mb-2">
+                        <input type="text" class="form-control form_height form_width" id="exampleFormControlInput1" placeholder="Name">
+                    </div>
+                    <div class="mb-2">
+                        <input type="email" class="form-control form_height form_width" id="exampleFormControlInput1" placeholder="E-mail address">
+                    </div>
+                    <div class="mb-2">
+                        <input type="text" class="form-control form_height form_width" id="exampleFormControlInput1" placeholder="Subject">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control form_width" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-danger btn_send">Send</button>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3 col-sm-12">
+                    <h3 class="footer_title mt_30">Further Information</h3>
+                    <ul type="none" class="further_info">
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Subscription</li>
+                        <li>Careers</li>
+                        <li>FAQ</li>
+                        <li>Help</li>
+                    </ul>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3 col-sm-12">
+                    <h3 class="footer_title mt_10">Follow Us</h3>
+                    <div class="d-flex">
+                        <div class="socmed_icon d-flex justify-content-center align-items-center ms-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" fill="white" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+                        </div>
+                        <div class="socmed_icon d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                            </svg>
+                        </div>
+                        <div class="socmed_icon d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" fill="white" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <p class="copyright">Copyright &copy 2023, Monica Aurellia</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signin Modal -->
+    <div class="modal fade" id="Signin" tabindex="-1" aria-labelledby="Signin" aria-hidden="true">
+        <div class="modal-dialog" style="margin-top: 110px;">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal_style pt-2">
+                    <h2 class="signin-title">Welcome!</h2>
+                    <div class="mb-2">
+                        <label for="inputemail" class="form-label label_style">E-mail</label>
+                        <input type="email" class="form-control form_height" id="inputemail" placeholder="E-mail address">
+                    </div>
+                    <div class="mb-2">
+                        <label for="inputpassword" class="form-label label_style">Password</label>
+                        <input type="password" class="form-control form_height" id="inputpassword" placeholder="Password">
+                    </div>
+                    <div>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="text-or checkbox_text">Keep me signed in</label>
+                    </div>
+                    <div class="btn_signin_wrap d-flex flex-column mt-3">
+                        <button type="button" class="btn btn-danger btn_signin">Sign In</button>
+                        <a href="#" class="create_acc">Create Account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spiderman Modal -->
+    <div class="modal fade" id="M-Spiderman" tabindex="-1" aria-labelledby="M-Spiderman" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg" alt="Spider-Man: No Way Home Poster">
+                        <div class="poster-title">
+                            <h1>Spider-Man: No Way Home</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2022 | 13+ | 2h 28m</p>
+                            <p class="overview">With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.</p>
+                            <p class="movie_info mb-0">Genre: Action, Adventure, Fiction</p>
+                            <p class="movie_info mb-0">Cast: Tom Holland, Zendaya, Benedict Cumberbatch, Jacob Batalon</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/JfVOs4VSpmA" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Doctor Strange Modal -->
+    <div class="modal fade" id="M-Doctor" tabindex="-1" aria-labelledby="M-Doctor" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/gUNRlH66yNDH3NQblYMIwgZXJ2u.jpg" alt="Doctor Strange in the Multiverse of Madness Poster">
+                        <div class="poster-title">
+                            <h1>Doctor Strange in the Multiverse of Madness</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2022 | 13+ | 2h 6m</p>
+                            <p class="overview">Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.</p>
+                            <p class="movie_info mb-0">Genre: Action, Adventure, Fantasy</p>
+                            <p class="movie_info mb-0">Cast: Benedict Cumberbatch, Elizabeth Olsen, Chiwetel Ejiofor, Benedict Wong</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/Rf8LAYJSOL8" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Black Panther Modal -->
+    <div class="modal fade" id="M-BlackP" tabindex="-1" aria-labelledby="M-BlackP" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/bty0TwJGsxMqYRptgyzn28Cxq5y.jpg" alt="Black Panther: Wakanda Forever Poster">
+                        <div class="poster-title">
+                            <h1>Black Panther: Wakanda Forever</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2022 | 13+ | 2h 41m</p>
+                            <p class="overview">The people of Wakanda fight to protect their home from intervening world powers as they mourn the death of King T'Challa.</p>
+                            <p class="movie_info mb-0">Genre: Action, Adventure, Drama</p>
+                            <p class="movie_info mb-0">Cast: Letitia Wright, Lupita Nyong'o, Danai Gurira, Winston Duke</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/_Z3QKkl1WyM" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Escape Room Modal -->
+    <div class="modal fade" id="M-Escape" tabindex="-1" aria-labelledby="M-Escape" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/dsdbViTNjLu4DbgkkYmuY4xDQ20.jpg" alt="Escape Room: Tournament of Champions Poster">
+                        <div class="poster-title">
+                            <h1>Escape Room: Tournament of Champions</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2021 | 13+ | 1h 28m</p>
+                            <p class="overview">Six people unwittingly find themselves locked in another series of escape rooms, slowly uncovering what they have in common to survive as they discover all the games that they've played before.</p>
+                            <p class="movie_info mb-0">Genre: Horror, Thriller, Mystery</p>
+                            <p class="movie_info mb-0">Cast: Taylor Russell, Logan Miller, Indya Moore, Holland Roden</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/KlfUbZJVInA" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sang-chi Modal -->
+    <div class="modal fade" id="M-Sangchi" tabindex="-1" aria-labelledby="M-Sangchi" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/r7K6Xt0RX4Mw0cAbZVw5cyb1Tux.jpg" alt="Shang-Chi and The Legend of The Ten Rings Poster">
+                        <div class="poster-title">
+                            <h1>Shang-Chi and The Legend of The Ten Rings</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2021 | 13+ | 2h 12m</p>
+                            <p class="overview">Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.</p>
+                            <p class="movie_info mb-0">Genre: Action, Adventure, Fantasy</p>
+                            <p class="movie_info mb-0">Cast: Simu Liu, Tony Leung Chiu-wai, Awkwafina, Zhang Meng'er</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/8YjFbMbfXaQ" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mulan Modal -->
+    <div class="modal fade" id="M-Mulan" tabindex="-1" aria-labelledby="M-Mulan" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/qAKvUu2FSaDlnqznY4VOp5PmjIF.jpg" alt="Mulan Poster">
+                        <div class="poster-title">
+                            <h1>Mulan</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2020 | 13+ | 1h 55m</p>
+                            <p class="overview">A young Chinese maiden disguises herself as a male warrior in order to save her father.</p>
+                            <p class="movie_info mb-0">Genre: Action, Adventure, Drama</p>
+                            <p class="movie_info mb-0">Cast: Liu Yifei, Donnie Yen, Gong Li, Jet Li</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/R-eFm--k21c" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sonic Modal -->
+    <div class="modal fade" id="M-Sonic" tabindex="-1" aria-labelledby="M-Sonic" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/stmYfCUGd8Iy6kAMBr6AmWqx8Bq.jpg" alt="Sonic the Hedgehog Poster">
+                        <div class="poster-title">
+                            <h1>Sonic the Hedgehog</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2020 | PG | 1h 39m</p>
+                            <p class="overview">After discovering a small, blue, fast hedgehog, a small-town police officer must help him defeat an evil genius who wants to do experiments on him.</p>
+                            <p class="movie_info mb-0">Genre: Action, Sci-Fi, Comedy</p>
+                            <p class="movie_info mb-0">Cast: James Marsden, Ben Schwartz, Tika Sumpter, Natasha Rothwell</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/szby7ZHLnkA" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pokemon Modal -->
+    <div class="modal fade" id="M-Pokemon" tabindex="-1" aria-labelledby="M-Pokemon" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/fLAt2avk3HoRkD4pyiZYniwXuVE.jpg" alt="Pokemon: Detective Pikachu Poster">
+                        <div class="poster-title">
+                            <h1>Pokemon: Detective Pikachu</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2019 | PG | 1h 45m</p>
+                            <p class="overview">In a world where people collect Pokemon to do battle, a boy comes across an intelligent talking Pikachu who seeks to be a detective.</p>
+                            <p class="movie_info mb-0">Genre: Action, Adventure, Fantasy</p>
+                            <p class="movie_info mb-0">Cast: Justice Smith, Ryan Reynolds, Kathryn Newton, Bill Nighy</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/1roy4o4tqQM" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jumanji Modal -->
+    <div class="modal fade" id="M-Jumanji" tabindex="-1" aria-labelledby="M-Jumanji" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/oLma4sWjqlXVr0E3jpaXQCytuG9.jpg" alt="Jumanji: The Next Level Poster">
+                        <div class="poster-title">
+                            <h1>Jumanji: The Next Level</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2019 | 13+ | 2h 3m</p>
+                            <p class="overview">As the gang return to Jumanji to rescue one of their own, they discover that nothing is as they expect. The players will have to brave parts unknown and unexplored in order to escape the world's most dangerous game.</p>
+                            <p class="movie_info mb-0">Genre: Adventure, Comedy, Fantasy</p>
+                            <p class="movie_info mb-0">Cast: Dwayne Johnson, Kevin Hart, Jack Black, Karen Gillan</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/rBxcF-r9Ibs" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Searching Modal -->
+    <div class="modal fade" id="M-Searching" tabindex="-1" aria-labelledby="M-Searching" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/yiBv9ZjCaD7MRjKAKVGALgfHkfM.jpg" alt="Searching Poster">
+                        <div class="poster-title">
+                            <h1>Searching</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2018 | 13+ | 1h 42m</p>
+                            <p class="overview">After his teenage daughter goes missing, a desperate father tries to find clues on her laptop.</p>
+                            <p class="movie_info mb-0">Genre: Thriller, Mystery, Drama</p>
+                            <p class="movie_info mb-0">Cast: John Cho, Michelle La, Debra Messing, Joseph Lee</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/L8lHX5AP9pU" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Greatest Showman Modal -->
+    <div class="modal fade" id="M-Showman" tabindex="-1" aria-labelledby="M-Showman" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/lrNKm3HNvGdZoAfiBKu7b04FLHN.jpg" alt="The Greatest Showman Poster">
+                        <div class="poster-title">
+                            <h1>The Greatest Showman</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2017 | 13+ | 1h 45m</p>
+                            <p class="overview">The story of American showman P.T. Barnum, founder of the circus that became the famous traveling Ringling Bros. and Barnum & Bailey Circus.</p>
+                            <p class="movie_info mb-0">Genre: Biography, Drama, Musical</p>
+                            <p class="movie_info mb-0">Cast: Hugh Jackman, Zac Efron, Michelle Williams, Zendaya</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/AXCTMGYUg9A" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Beauty and The Beast Modal -->
+    <div class="modal fade" id="M-Beauty" tabindex="-1" aria-labelledby="M-Beauty" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-wrap">
+                    <button type="button" class="btn-close btn_close_white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 5px 0 0; margin-bottom: -5px">
+                    <div class="poster-wrap">
+                        <img class="poster" src="https://www.themoviedb.org/t/p/original/m3tdSyl11fhgXPDSEt3aBctTqGP.jpg" alt="Beauty and The Beast Poster">
+                        <div class="poster-title">
+                            <h1>Beauty and The Beast</h1>
+                        </div>
+                        <div class="poster-content">
+                            <p class="movie_info">2017 | PG | 2h 9m</p>
+                            <p class="overview">A selfish Prince is cursed to become a monster for the rest of his life, unless he learns to fall in love with a beautiful young woman he keeps prisoner.</p>
+                            <p class="movie_info mb-0">Genre: Family, Fantasy, Romance</p>
+                            <p class="movie_info mb-0">Cast: Emma Watson, Dan Stevens, Luke Evans, Josh Gad</p>
+                        </div>
+
+                        <div class="modal_button_wrap">
+                            <div style="padding-right: 5px;">
+                                <button type="button" class="btn btn-danger btn-watch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>Watch Now</button>
+                            </div>
+                            <div style="padding: 0 5px;">
+                                <button type="button" class="btn btn-outline-danger btn-trailer" data-bs-toggle="collapse" data-bs-target="#trailer-video">Watch Trailer</button>
+                            </div>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon_section">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Video Trailer Collapse -->
+                        <div class="collapse" id="trailer-video" style="padding: 20px 20px 0">
+                            <iframe width="100%" height="260px" src="https://www.youtube.com/embed/e3Nl_TCQXuw" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
