@@ -916,5 +916,26 @@
             </div>
         </div>
     </div>
+
+<script>
+    const newId = document.getElementsByClassName("navbar-nav")[0];
+    newId.setAttribute('id', 'add-li');
+
+    const newLi = document.createElement('li');
+    const ul = document.getElementById('add-li');
+    ul.appendChild(newLi);
+
+    const hideBtn = document.getElementsByClassName("btn-trailer");
+    for(let i = 0; i < hideBtn.length; i++) {
+        hideBtn[i].innerHTML = 'Show Trailer';
+        hideBtn[i].onclick = function() {
+            if(this.innerHTML === 'Show Trailer') {
+                this.innerHTML = 'Hide Trailer';
+            } else if(this.innerHTML === 'Hide Trailer') {
+                this.innerHTML = 'Show Trailer';
+            } 
+        } 
+    };
+</script>
 </body>
 </html>
