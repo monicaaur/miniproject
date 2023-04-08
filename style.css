@@ -423,7 +423,7 @@ img.poster {
     color: rgba(230, 40, 62, .85);
 }
 
-.btn-trailer:active {
+.modal_button_wrap .btn-trailer:active {
     background: transparent;
     color: rgba(230, 40, 62, .85);
 }
