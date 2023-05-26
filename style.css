@@ -213,7 +213,7 @@
 /* Footer */
 .footer_area {
     padding: 50px 70px 0;
-    background-color: rgba(12, 12, 12, .95);
+    background-color: rgba(12, 12, 12, .8);
 }
 
 .feedback_title {
@@ -374,7 +374,7 @@ img.poster {
 }
 
 .movie_info {
-    color: #535353;
+    color: #b1b1b1;
     font-size: 15px;
     margin-bottom: 10px;
 }
@@ -504,5 +504,25 @@ img.poster {
     .copyright {
         text-align: left;
         padding-top: 35px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .fixed-top{
+      padding-left: 43px;
+      padding-right: 35px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .fixed-top{
+        padding-left: 35px;
+        padding-right: 25px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .poster-title{
+        height: 281px;
     }
 }
